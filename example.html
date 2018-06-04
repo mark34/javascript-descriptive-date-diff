@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Descriptive Date Difference - example</title>
+</head>
+<body>
+<!--
+
+
+Just open this page in a web browser.
+
+
+-->
+<script src="descriptiveDateDiff.js" ></script>
+
+
+<script>
+
+    var diffObject = makeDifferenceObject( new Date(1528912988000), new Date(1528123372000) );
+
+    document.write('<div>First example: 2018-06-13 18:03:08 and 2018-06-04 14:42:52</div>');
+    document.write( "<br>diffObject.toString( {'maxDetail': 1} ) = " + diffObject.toString( {'maxDetail': 1} ) );
+    document.write( "<br>diffObject.toString( {'maxDetail': 4} ) = " + diffObject.toString( {'maxDetail': 4} ) );
+
+    document.write( "<hr/>");
+
+    diffObject = makeDifferenceObject( new Date(1580530870000), new Date(1528123372000) );
+    document.write('Second example: 2020-02-01 04:21:10 and 2018-06-04 14:42:52<br>')
+    document.write( "<br>diffObject.toString( {'maxDetail': 1} ) = " + diffObject.toString( {'maxDetail': 1} ) );
+    document.write( "<br>diffObject.toString( {'maxDetail': 3} ) = " + diffObject.toString( {'maxDetail': 3} ) );
+    document.write( "<br>diffObject.toString() = " + diffObject.toString() );
+
+    document.write( "<hr/>");
+
+    diffObject = makeDifferenceObject( new Date(1528912988000), new Date(1528916462000) );
+    document.write('Third example: 2018-06-13 18:03:08 and 2018-06-13 19:01:02<br>')
+    document.write( "<br>diffObject.toString( {'maxDetail': 1} ) = " + diffObject.toString( {'maxDetail': 1} ) );
+    document.write( "<br>diffObject.toString( {'maxDetail': 30} ) = " + diffObject.toString( {'maxDetail': 30} ) );
+    document.write( "<br>diffObject.toString() = " + diffObject.toString() );
+    document.write( "<br><br>Join the elements yourself:<br>diffObject.toArray({'maxDetail':2}).join(' and ') = " + diffObject.toArray({'maxDetail':2}).join(' and ') );
+
+</script>
+</body>
+</html>
