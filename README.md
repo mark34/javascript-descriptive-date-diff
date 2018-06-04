@@ -1,4 +1,4 @@
-#A very simple js file to provide a textual description of the difference between 2 dates.
+# A very simple js file to provide a textual description of the difference between 2 dates.
 
 I'm not primarily a js coder, so I wanted something very simple that has no dependencies, and does the job reliably.
 I was amazed that I couldn't find anything that did the job I wanted, so I quickly wrote the code for myself. 
