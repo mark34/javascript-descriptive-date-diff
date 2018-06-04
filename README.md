@@ -17,12 +17,14 @@ For example, from the example.html page :
 
 First example: 2018-06-13 18:03:08 and 2018-06-04 14:42:52
 
+diffObject = makeDifferenceObject( new Date(1528912988000), new Date(1528123372000) );
 diffObject.toString( {'maxDetail': 1} ) = 1 week
 diffObject.toString( {'maxDetail': 4} ) = 1 week, 2 days, 20 minutes, 16 seconds
 
 
 Second example: 2020-02-01 04:21:10 and 2018-06-04 14:42:52
 
+diffObject = makeDifferenceObject( new Date(1580530870000), new Date(1528123372000) )
 diffObject.toString( {'maxDetail': 1} ) = 1 year
 diffObject.toString( {'maxDetail': 3} ) = 1 year, 7 months, 4 weeks
 diffObject.toString() = 1 year, 7 months, 4 weeks, 1 day, 38 minutes, 18 seconds
@@ -30,6 +32,7 @@ diffObject.toString() = 1 year, 7 months, 4 weeks, 1 day, 38 minutes, 18 seconds
 
 Third example: 2018-06-13 18:03:08 and 2018-06-13 19:01:02
 
+diffObject = makeDifferenceObject( new Date(1528912988000), new Date(1528916462000) )
 diffObject.toString( {'maxDetail': 1} ) = 57 minutes
 diffObject.toString( {'maxDetail': 30} ) = 57 minutes, 54 seconds
 diffObject.toString() = 57 minutes, 54 seconds
