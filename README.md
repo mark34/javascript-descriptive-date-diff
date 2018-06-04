@@ -11,6 +11,29 @@ The code is based on an answer I saw on stackoverflow.com to a question: https:/
 - the object also has convenience methods: toString() and toArray() 
 - you can limit the detail, so you get only months, weeks, days or whatever. 
 
+For example, from the example.html page :
+
+```
+
+First example: 2018-06-13 18:03:08 and 2018-06-04 14:42:52
+
+diffObject.toString( {'maxDetail': 1} ) 
+
+1 week
+
+diffObject.toString( {'maxDetail': 4} )
+ 
+1 week, 2 days, 20 minutes, 16 seconds
+
+```
+
+The diffObject generates an interval in terms of years, months, weeks, days, hours, minutes, and seconds.     
+
+The idea is that you write the whole lot out as a description;     
+
+The interval is expressed as **N years, and N months and N weeks and N days, N hours and N minutes and N seconds.**
+ 
+
 ## to use: 
 
 Get a string representation:
