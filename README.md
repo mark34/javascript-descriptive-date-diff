@@ -4,14 +4,14 @@ I'm not primarily a js coder, so I wanted something very simple that has no depe
 I was amazed that I couldn't find anything that did the job I wanted, so I quickly wrote the code for myself. 
 The code is based on an answer I saw on stackoverflow.com to a question: https://stackoverflow.com/questions/7763327/how-to-calculate-date-difference-in-javascript by user : https://stackoverflow.com/users/198062/murat-Çorlu
 
-##What it does
+## What it does
 
 - take 2 js Date objects
 - return an object containing years, months, weeks, days, hours, minutes, seconds
 - the object also has convenience methods: toString() and toArray() 
 - you can limit the detail, so you get only months, weeks, days or whatever. 
 
-##to use: 
+## to use: 
 
 Get a string representation:
 ```
@@ -36,12 +36,12 @@ console.log( diffObject.toString( {'maxDetail': 4} ) );
 console.log( diffObject.toString( {'maxDetail': 1} ) );
 ```
 
-#Executable example  
+# Executable example  
 
 Download example.html & descriptiveDateDiff.js and open example.html in a web browser.
 
 
-##License 
+## License 
 
 (C) 2018 Mark Birch
 
