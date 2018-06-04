@@ -51,6 +51,12 @@ The interval is expressed as **N years, and N months and N weeks and N days, N h
 
 ## to use: 
 
+Include the single small js file: 
+
+```
+<script src="descriptiveDateDiff.js" ></script>
+```
+
 Get a string representation:
 ```
 var diffObject = makeDifferenceObject( new Date(1528912988000), new Date(1528123372000) );
